@@ -1,0 +1,795 @@
+/* Page centering */
+.page {
+    min-height: 100vh;
+    background: #fff;
+    color: #111;
+    display: flex;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 880px;
+  }
+  
+  /* Header */
+  .docHeader {
+    text-align: center;
+    margin-bottom: 14px;
+  }
+  .docTitle {
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    font-size: 22px;
+  }
+  .docSubtitle {
+    font-weight: 800;
+    margin-top: 2px;
+    font-size: 16px;
+  }
+  .docNote {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #000000;
+  }
+  
+  /* Cards */
+  .card {
+    border: 1px solid #e6e6e6;
+    border-radius: 12px;
+    padding: 18px;
+  }
+  .stepperCard {
+    margin: 14px 0 18px;
+  }
+  
+  /* Stepper */
+  .stepperRow {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .stepDotWrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 90px;
+  }
+  
+  .stepDot {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: 2px solid #d6d6d6;
+    display: grid;
+    place-items: center;
+    font-weight: 700;
+    font-size: 13px;
+    color: #aaa;
+  }
+  .stepDot.active {
+    border-color: #111;
+    color: #111;
+  }
+  
+  .stepLabel {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #bbb;
+  }
+  .stepLabel.active {
+    color: #111;
+  }
+  
+  .stepLine {
+    height: 2px;
+    background: #e7e7e7;
+    flex: 1;
+    margin: 0 10px;
+  }
+  
+  .stepperCaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Fieldsets */
+  .fieldset {
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    padding: 18px;
+    margin: 16px 0;
+  }
+  
+  .legend {
+    padding: 0 10px;
+    font-weight: 700;
+    font-size: 14px;
+  }
+  
+  /* Section A */
+  .checkRow {
+    display: flex;
+    gap: 26px;
+    align-items: center;
+  }
+  .checkLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+  }
+  .checkLabel input {
+    width: 16px;
+    height: 16px;
+  }
+  
+  /* Grids for section B */
+  .grid4 {
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  
+  .grid3 {
+    display: grid;
+    grid-template-columns: 3fr 1fr 1.2fr;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  
+  .grid1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-top: 14px;
+    max-width: 260px;
+  }
+  
+  .grid6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1.2fr 1.2fr 2fr;
+    gap: 16px;
+    margin-top: 14px;
+  }
+  
+  .bottomRow {
+    align-items: end;
+  }
+  
+  /* Fields with underline style (PDF-like) */
+  .fieldLabel {
+    font-size: 11px;
+    color: #7a7a7a;
+    letter-spacing: 0.6px;
+  }
+  
+  .lineWrap {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  
+  .lineInput {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 14px;
+    background: transparent;
+  }
+  .lineInput::placeholder {
+    color: #b8b8b8;
+  }
+  
+  .lineInput.small {
+    max-width: 90px;
+  }
+  
+  .suffix {
+    font-size: 11px;
+    color: #7a7a7a;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Phone line mimics ( ) ____ */
+  .phoneWrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 10px;
+  }
+  .paren {
+    color: #777;
+  }
+  .phoneBox {
+    width: 48px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfcfcf;
+    background: transparent;
+  }
+  .phoneBoxWide {
+    width: 120px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #cfcfcf;
+    background: transparent;
+  }
+  
+  .lineUnder {
+    height: 1px;
+    background: transparent;
+  }
+  
+  /* Radios (PDF-like) */
+  .radioRow {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  
+  .radioLabel {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    color: #111;
+  }
+  
+  .checkInline {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #cfcfcf;
+  }
+  
+  .tinyNote {
+    font-size: 11px;
+    color: #777;
+  }
+  
+  /* Footer */
+  .footerCard {
+    margin-top: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btnGhost {
+    border: 1px solid #e2e2e2;
+    background: #f6f6f6;
+    color: #999;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: not-allowed;
+    font-weight: 600;
+  }
+  
+  .btnPrimary {
+    border: 1px solid #111;
+    background: #111;
+    color: #fff;
+    padding: 10px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 700;
+  }
+  
+  .pageIndicator {
+    font-size: 12px;
+    color: #777;
+  }
+  
+  /* Responsive */
+  @media (max-width: 860px) {
+    .grid4, .grid3, .grid6 {
+      grid-template-columns: 1fr;
+    }
+    .grid1 { max-width: none; }
+    .checkRow { flex-direction: column; align-items: flex-start; }
+    .stepperRow { flex-wrap: wrap; gap: 10px; }
+    .stepLine { display: none; }
+  }
+
+  /* Force all form text to be black */
+.page,
+.container,
+.fieldset,
+.legend,
+.fieldLabel,
+.docTitle,
+.docSubtitle,
+.docNote,
+.stepLabel,
+.stepperCaption,
+.radioLabel,
+.checkLabel,
+.tinyNote,
+.pageIndicator {
+  color: #000 !important;
+}
+
+/* Step 2 specific */
+.stepLine.active {
+    background: #111;
+  }
+  
+  .stepDot.done {
+    border-color: #111;
+    background: #111;
+    color: #fff;
+  }
+  
+  .yesNo {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .qRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .qText {
+    font-size: 13px;
+  }
+  
+  .qDivider {
+    border-top: 1px solid #d9d9d9;
+    margin: 12px 0;
+  }
+  
+  .qInputLine {
+    margin-top: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #d0d0d0;
+    max-width: 420px;
+  }
+  
+  .lineInputPlain {
+    border: none;
+    outline: none;
+    width: 100%;
+    font-size: 13px;
+    background: transparent;
+    color: #000;
+  }
+  
+  .smallItalic {
+    font-size: 12px;
+    font-style: italic;
+    margin-bottom: 8px;
+  }
+  
+  .subTextBold {
+    font-size: 12px;
+    font-weight: 700;
+    margin: 10px 0 6px;
+  }
+  
+  .importantBox {
+    margin-top: 14px;
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 12px;
+    background: #fff;
+  }
+  
+  .importantTitle {
+    font-weight: 800;
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+  
+  .importantText {
+    font-size: 12px;
+    line-height: 1.35;
+  }
+  
+  /* Make Previous enabled look like screenshot */
+  .btnGhostActive {
+    border: 1px solid #e2e2e2;
+    background: #fff;
+    color: #111;
+    padding: 10px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  /* ---------- Step 3 (E + F) ---------- */
+
+.eRow {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  .eRowYes {
+    grid-template-columns: 1fr auto;
+    align-items: start;
+  }
+  
+  .eText {
+    font-size: 13px;
+    line-height: 1.35;
+  }
+  
+  .eHint {
+    margin-top: 6px;
+    font-size: 12px;
+    color: #000; /* you wanted all black */
+  }
+  
+  .rightYes {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 13px;
+    white-space: nowrap;
+    margin-top: 2px;
+  }
+  
+  .eLineWrap {
+    margin-top: 12px;
+  }
+  
+  .eLine {
+    height: 1px;
+    background: #cfcfcf;
+    width: 420px;
+    max-width: 100%;
+  }
+  
+  .eDivider {
+    border-top: 1px solid #d9d9d9;
+    margin: 16px 0 10px;
+  }
+  
+  .specialTitle {
+    font-size: 12px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .specialRow {
+    display: flex;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+  
+  /* F section */
+  .fGrid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 10px;
+  }
+  
+  .fGrid2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 18px;
+    margin-top: 10px;
+  }
+  
+  .lineFieldLabel {
+    font-size: 11px;
+    letter-spacing: 0.5px;
+  }
+  
+  .lineFieldLine {
+    height: 1px;
+    background: #cfcfcf;
+    margin-top: 22px;
+  }
+  
+  .fQuestion {
+    margin-top: 14px;
+  }
+  
+  .fQText {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+  
+  .fRadios {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .fDivider {
+    border-top: 1px solid #d9d9d9;
+    margin: 16px 0 6px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 860px) {
+    .fGrid3,
+    .fGrid2 {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Signature pad field */
+.sigField {
+    width: 100%;
+  }
+  
+  .sigWrap {
+    position: relative;
+    margin-top: 12px;
+    border-bottom: 1px solid #cfcfcf; /* keeps the PDF line look */
+    padding-bottom: 6px;
+  }
+  
+  .sigCanvas {
+    width: 100%;
+    height: 70px;           /* signature height */
+    display: block;
+    background: transparent;
+    touch-action: none;     /* important for drawing on touch devices */
+  }
+  
+  .sigClear {
+    position: absolute;
+    right: 0;
+    top: -2px;
+    border: 1px solid #ddd;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  /* ---------- Step 4 (G + H) ---------- */
+
+.gIntro {
+    font-size: 13px;
+    line-height: 1.45;
+    margin-top: 6px;
+  }
+  
+  .gBox {
+    border: 1px solid #d7d7d7;
+    background: #f7f7f7;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin: 14px 0 10px;
+  }
+  
+  .gBoxTitle {
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 8px;
+  }
+  
+  .gList {
+    margin: 0;
+    padding-left: 18px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+  
+  .gDeclineRow {
+    margin-top: 10px;
+  }
+  
+  .gDeclineText {
+    font-weight: 600;
+  }
+  
+  .gSmallNote {
+    font-size: 12px;
+    color: #000;
+    line-height: 1.45;
+    margin-top: 8px;
+  }
+  
+  .gDivider {
+    border-top: 1px solid #d9d9d9;
+    margin: 16px 0;
+  }
+  
+  .gPartyTitle {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+  
+  .gPartyGroup {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .gRadio {
+    font-size: 13px;
+  }
+  
+  .gOtherRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+  }
+  
+  .gOtherInput {
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    outline: none;
+    padding: 6px 2px;
+    font-size: 13px;
+    background: transparent;
+    color: #000;
+  }
+  
+  .gLineBlock {
+    margin-top: 14px;
+  }
+  
+  .gLineLabel {
+    font-size: 13px;
+    line-height: 1.4;
+    margin-bottom: 8px;
+  }
+  
+  .gLineInput {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cfcfcf;
+    outline: none;
+    padding: 10px 2px 6px;
+    font-size: 13px;
+    background: transparent;
+    color: #000;
+  }
+  
+  .gPollRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 18px;
+    align-items: center;
+    margin-top: 14px;
+  }
+  
+  .gBold {
+    font-size: 12px;
+    font-weight: 700;
+    margin-top: 16px;
+  }
+  
+  .noticeBox {
+    border: 1px solid #d7d7d7;
+    border-radius: 8px;
+    padding: 12px 14px;
+    margin-top: 10px;
+  }
+  
+  .noticeText {
+    font-size: 12px;
+    line-height: 1.5;
+    color: #000;
+  }
+  
+  /* Applicant certification */
+  .hText {
+    font-size: 12px;
+    line-height: 1.55;
+    margin-top: 6px;
+  }
+  
+  .hSigGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 18px;
+    margin-top: 16px;
+  }
+  
+  @media (max-width: 860px) {
+    .gPollRow,
+    .hSigGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Employee box at bottom */
+  .employeeBox {
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    padding: 14px;
+    margin-top: 14px;
+  }
+  
+  .empTopRow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 14px;
+    align-items: center;
+    font-size: 12px;
+    color: #000;
+  }
+  
+  .empText {
+    line-height: 1.45;
+  }
+  
+  .empRight {
+    white-space: nowrap;
+    color: #666;
+  }
+  
+  .empSigGrid {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 18px;
+    margin-top: 14px;
+  }
+  
+  .empBottom {
+    font-size: 12px;
+    color: #666;
+    margin-top: 14px;
+    line-height: 1.45;
+  }
+  /* Header Layout */
+.docHeader {
+    margin-bottom: 20px;
+  }
+  
+  .docHeaderRow {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .dmvLogo {
+    width: 110px;
+    height: auto;
+  }
+  
+  .docHeaderText {
+    flex: 1;
+  }
+  
+  .docTitle {
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #000;
+  }
+  
+  .docSubtitle {
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 4px;
+    color: #000;
+  }
+  
+  .docNote {
+    font-size: 13px;
+    margin-top: 8px;
+    color: #000;
+  }

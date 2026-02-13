@@ -1,0 +1,7 @@
+/* Keep App.css minimal.
+   Layout and styling are handled in wizard/wizard.css */
+
+   #root {
+    width: 100%;
+    min-height: 100vh;
+  }
